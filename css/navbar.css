@@ -278,7 +278,7 @@ body.nav-open {
         display: none;
     }
     body > nav {
-        display: flex;
+        display: inherit;
         justify-content: center;
     }
     body > nav ~ section > h1 + p {
@@ -308,4 +308,22 @@ body.nav-open {
     nav ul {
         margin: 0px 5px;
     }
+}
+
+#es-button {
+    display: inline;
+    position: relative;
+    float: right;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+#es-button > a:link {
+    text-decoration: none;
+    border-bottom: none;
+}
+
+#es-button > a > img {
+    width: 30px;
+    height: 30px;
 }
