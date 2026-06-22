@@ -310,20 +310,50 @@ body.nav-open {
     }
 }
 
-#es-button {
-    display: inline;
+#lang-button {
+    display: flex;
     position: relative;
     float: right;
     margin-right: 30px;
     cursor: pointer;
+    flex-direction: column;
+    justify-content: left;
+    width: 50px;
+    overflow-x: show;
 }
 
-#es-button > a:link {
+#lang-button > a:link {
     text-decoration: none;
     border-bottom: none;
 }
 
-#es-button > a > img {
+#lang-button > img {
     width: 30px;
     height: 30px;
+}
+
+#lang-button > ul {
+    position: relative;
+    top: 0;
+    left: -50px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: all;
+    display: flex;
+    background-color: #ffffff;
+    padding: 5px 5px;
+    flex-direction: column;
+    min-width: 10px;
+    width: max-content;
+}
+
+#lang-button li {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#lang-button:hover > ul{
+    pointer-events: auto;
+    opacity: 1;
+    box-shadow: none;
 }
