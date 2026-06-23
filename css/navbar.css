@@ -330,6 +330,7 @@ body.nav-open {
 #lang-button img {
     width: 30px;
     height: 30px;
+    margin-left: 0px;
 }
 
 #lang-button > ul {
